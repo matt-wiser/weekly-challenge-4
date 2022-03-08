@@ -2,13 +2,7 @@ var startButtonEl = document.getElementById("game-start");
 var timerEl = document.getElementById("timer");
 
 function gameStart(){
-    var timer = document.getElementById("timer");
-    timer = parseInt(timer);
-    timerLogic(timer);
-}
-
-function timerLogic(timer){
-    timerEl.innerText =  "5";
+    timerEl.innerText =  "75";
     var currentTime = parseInt(timerEl.innerText);
     var countdown = setInterval(function(){
         if (currentTime > 0) {
@@ -22,5 +16,6 @@ function timerLogic(timer){
         }
     }, 1000)
 }
+
 
 startButtonEl.addEventListener("click", gameStart);
