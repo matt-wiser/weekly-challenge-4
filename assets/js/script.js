@@ -114,7 +114,7 @@ function writeToStorage() {
         console.log('intitials', initials);
         var highScoreInfo = {
             initials: initials,
-            score: questionIterator
+            score: currentTime
         }
         highScoreArray.push(highScoreInfo);
         localStorage.setItem("high-scores", JSON.stringify(highScoreArray));
